@@ -13,7 +13,7 @@ function Login() {
     e.preventDefault();
 
     const res = await axios.post(
-      "http://localhost:8000/api/auth/login",
+      "https://teachbridge.onrender.com/api/auth/login",
       { email, password }
     );
 

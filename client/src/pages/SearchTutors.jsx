@@ -7,7 +7,7 @@ function SearchTutors() {
 
   const bookSession = async (tutorId) => {
   await axios.post(
-    "http://localhost:8000/api/bookings",
+    "https://teachbridge.onrender.com/api/bookings",
     {
       studentId: "demo-student",
       tutorId,
@@ -20,7 +20,7 @@ function SearchTutors() {
 
   const fetchTutors = async (search = "") => {
     const res = await axios.get(
-      `http://localhost:8000/api/tutors/search?query=${search}`
+      `https://teachbridge.onrender.com/api/tutors/search?query=${search}`
     );
 
     setTutors(res.data);

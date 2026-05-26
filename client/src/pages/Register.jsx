@@ -25,7 +25,7 @@ function Register() {
     };
 
     await axios.post(
-        "http://localhost:8000/api/auth/register",
+        "https://teachbridge.onrender.com/api/auth/register",
         payload
     );
 

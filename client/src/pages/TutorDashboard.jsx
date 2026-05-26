@@ -12,7 +12,7 @@ function TutorDashboard() {
     const tutorId = localStorage.getItem("userId");
 
     const res = await axios.get(
-      `http://localhost:8000/api/bookings/${tutorId}`
+      `https://teachbridge.onrender.com/api/bookings/${tutorId}`
     );
 
     setBookings(res.data);
