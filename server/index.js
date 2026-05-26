@@ -14,7 +14,8 @@ const PORT = process.env.PORT || 8000;
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://your-vercel-app.vercel.app"
+    "https://your-vercel-app.vercel.app",
+    "teach-bridge.vercel.app"
   ]
 }));
 
